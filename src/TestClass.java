@@ -1,13 +1,18 @@
 import java.util.HashMap;
 
+import util.BST;
 import util.Quick;
 import util.Utils;
 
 public class TestClass {
 	public static void main(String[] args) {
-		Integer[] arr = {5,2,4,6,8,1,3};
-		Quick.sort(arr);
-		Utils.showArray(arr);
+		BST<Integer, String> bst = new BST<Integer, String>();
+		bst.put(2, "B");
+		bst.put(5, "E");
+		bst.put(3, "C");
+		bst.put(1, "A");
+		bst.put(4, "D");
+		bst.print();
 	}
 	static int hash(Object var0) {
 		int var1;
